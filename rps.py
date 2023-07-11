@@ -10,6 +10,7 @@ score = {
     "com": 0
 }
 
+
 def choose_weapon() -> str:
     while 1:
         weapon = input("Choose 'rock', 'paper' or 'scissors': ")
@@ -50,6 +51,7 @@ def get_winner(player: str, com: str, score: dict):
         score["player"] += 1
         return score
     return False
+
 
 def rock_paper_scissors(weapon: str, score: dict):
     com_weapon = random.choice(RPS_OPTIONS)
